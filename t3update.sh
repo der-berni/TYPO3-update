@@ -7,7 +7,8 @@ __PROGNAME=$(basename $0)
 __SCRIPT_VERSION=13.269
 
 __DATE=`date +"%Y-%m-%d %H:%M"`
-__CURDIR=`pwd`
+__CURDIR=$(dirname $0)
+cd ${__CURDIR}
 
 __CONFIG_FILE=
 __TYPO_VERSION=
