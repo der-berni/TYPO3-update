@@ -94,6 +94,11 @@ if [[ ! -z "${__FORCE_VERSION}" ]]; then
 	__TYPO3_SRC_FILE=typo3_src-${__TYPO3_LATEST}.tar.gz
 fi
 
+if [[ -z "${__TYPO3_LATEST}" ]]; then
+	echo "ERROR                         : latest TYPO3 release not found"
+	exit 1
+fi
+
 if [[ "${__TYPO_VERSION}" != "${__TYPO3_LATEST}" ]]; then
 	
 	if [[ -z "${__FORCE_VERSION}" ]]; then
