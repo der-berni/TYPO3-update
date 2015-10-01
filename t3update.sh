@@ -4,7 +4,7 @@
 # der-berni
 
 __PROGNAME=$(basename $0)
-__SCRIPT_VERSION=13.269
+__SCRIPT_VERSION=15.273
 
 __DATE=`date +"%Y-%m-%d %H:%M"`
 __CURDIR=$(dirname $0)
